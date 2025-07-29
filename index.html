@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Docker Calculator</title>
+</head>
+<body>
+  <h1>🧮 Add Two Numbers</h1>
+  <form method="POST">
+    <input name="num1" type="text" placeholder="First Number" required>
+    <input name="num2" type="text" placeholder="Second Number" required>
+    <button type="submit">Add</button>
+  </form>
+  {% if result is not none %}
+    <h2>Result: {{ result }}</h2>
+  {% endif %}
+</body>
+</html>
